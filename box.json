@@ -1,0 +1,27 @@
+{
+    "banner": [
+        "Avonture Christophe",
+        "",
+        "Generate Wiki Sidebar",
+        "https://github.com/cavo789/generate_wiki_sidebar"
+    ],
+    "alias": "generate_wiki_sidebar.phar",
+    "output": "bin/generate_wiki_sidebar.phar",
+    "force-autodiscovery": true,
+    "main": "src/Run.php",
+    "directories": [
+        "src",
+        "vendor"
+    ],
+    "exclude-dev-files": false,
+    "exclude-composer-files": false,
+    "compression": "GZ",
+    "compactors": [
+        "KevinGH\\Box\\Compactor\\Php",
+        "KevinGH\\Box\\Compactor\\Json"
+    ],
+    "datetime": "release-date",
+    "blacklist": [
+        "box.phar"
+    ]
+}

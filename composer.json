@@ -1,0 +1,22 @@
+{
+    "name": "avonture/generate-wiki-sidebar",
+    "description": "Create the _sidebar.md file for Gitlab wikis",
+    "license": "MIT",
+    "require": {
+        "php": "^7.2",
+        "beberlei/assert": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Avonture\\Classes\\": "src/Classes/",
+            "Avonture\\": [
+                "src/"
+            ]
+        }
+    },
+    "scripts": {
+        "post-update-cmd": [
+            "php bin/box.phar compile"
+        ]
+    }
+}
